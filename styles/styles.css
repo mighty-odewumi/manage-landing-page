@@ -1,0 +1,681 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: hsl(0, 0%, 100%) url(../images/bg-tablet-pattern.svg) no-repeat 100px -300px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container, .footer-container, .attribution, .banner {
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+/* .header-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+nav, .nav-btn  {
+    display: none;
+}
+
+.header-container {
+    position: relative;
+}
+
+.logo-ham {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#close-icon {
+    display: none;
+    position: absolute;  
+    top: 0px;
+    right: 30px;
+}
+
+nav {
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 90%;
+    padding: 10px 0;
+    padding-bottom: 25px;
+    transition: 1s;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+nav a {
+    margin-top: 20px;
+    display: block;
+    font-weight: 700;
+    color:hsl(228, 39%, 23%);
+}
+
+nav a:hover, nav a:focus {
+    opacity: .5;
+    transition: .5s;
+}
+
+.hero-container {
+    margin: 20px;
+}
+
+.hero-img {
+    margin-top: 20px;
+}
+
+h1 {
+    color: hsl(228, 39%, 23%);
+}
+
+.hero-paragraph {
+    line-height: 24px;
+    color: hsl(227, 12%, 61%);
+    margin-top: -16px;
+}
+
+.cta-btn {
+    background: hsl(12, 88%, 59%);
+    color:  hsl(13, 100%, 96%);
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 1px 5px 17px hsl(0, 9%, 55%);
+    width: 50%;
+    margin: auto;
+}
+
+.main-cta {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 72px;
+}
+
+.pitch-talk-container h2 {
+    color: hsl(228, 39%, 23%);
+   
+}
+
+.pitch-talk-container p, .testimonials-section p {
+    color: hsl(227, 12%, 61%);
+    line-height: 24px;
+}
+
+.pitch-talk-headings {
+    margin: 30px;
+    background: url(../images/bg-tablet-pattern.svg) no-repeat 200px top;
+    background-size: contain;
+}
+
+.pitch-explain-heading {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+.pitch-number {
+    background: hsl(12, 88%, 59%);
+    width: 70px;
+    border-radius: 20px;
+    padding: 10px;
+    color: hsl(13, 100%, 96%);
+}
+
+.h3-heading {
+    background: hsl(13, 100%, 96%);
+    padding: 4px;
+    width: 100%;
+    text-align: left;
+    margin-left: -30px;
+    z-index: -2;
+}
+
+.pitch-explain-heading h3 {
+    color: hsl(228, 39%, 23%);
+    padding: 0;
+    margin: 4px;
+    margin-left: 40px;
+    font-size: 16px;
+    z-index: 4;
+}
+
+.pitch-explain {
+    text-align: left;
+    margin: 10px;
+    margin-top: 16px;
+}
+
+.pitch-list {
+    margin-top: 48px;
+}
+
+.testimonials-section {
+    margin-top: 54px;
+}
+
+.testimonials-section img {
+    width: 20%;
+    margin-top: -30px;
+}
+
+.main-testimonials {
+    position: relative;
+    margin-top: 54px;
+}
+
+.testimonials-section h2 {
+    color: hsl(228, 39%, 23%);
+}
+
+.testimonial {
+    background: hsl(0, 0%, 98%);
+    margin: 20px;
+    display: none;
+}
+
+.testimonial-quote {
+    padding: 20px;
+}
+
+#dot-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 48px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid brown;
+    display: inline-block;
+    transition: background-color .5s ease;
+    margin: 0 2px;
+}
+
+.active, .dot:hover, .dot:focus {
+    background: hsl(12, 88%, 59%);
+}
+
+.testimonials-btn {
+    margin-bottom: 48px;
+    display: block;
+}
+
+.banner {
+    background: hsl(12, 88%, 59%) url(../images/bg-simplify-section-mobile.svg) no-repeat;
+    padding: 60px;
+    color: hsl(0, 0%, 100%);
+}
+
+.banner-btn {
+    color: hsl(12, 88%, 59%);
+    background: hsl(0, 0%, 98%);
+    margin-top: 30px;
+    display: block;
+    width: 80%;
+}
+
+footer {
+    background: hsl(233, 12%, 13%);
+    padding: 40px;
+}
+
+label {
+    text-align: right;
+}
+
+#email {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.email-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.foot-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.foot-links a {
+    display: block;
+    color: hsl(0, 0%, 98%);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    margin-top: 48px;
+    align-items: baseline;
+    margin-bottom: 48px;
+}
+
+.foot-logo {
+    background-color: #fff;
+}
+
+.copyright {
+    color:  hsl(227, 12%, 61%);
+    margin: 32px;
+}
+
+.copyright-hide-mobile {
+    display: none;
+}
+
+.attribution {
+    color: white;
+}
+
+.attribution a {
+    color: hsl(227, 12%, 61%);
+}
+
+.attribution a:hover, .attribution a:focus {
+    text-decoration: underline;
+}
+
+.btn:hover, .btn:focus {
+    background:  hsl(12, 79%, 65%);
+    transition: .5s;
+}
+
+.banner-btn:hover, .banner-btn:focus {
+    color: hsl(13, 71%, 75%);
+    background-color: hsl(13, 100%, 96%);
+    transition: .5s;
+}
+
+.foot-links a:hover, .foot-links a:focus {
+    color: hsl(12, 88%, 59%);
+    transition: .5s;
+}
+
+.soc:hover, .soc:focus {
+    filter: grayscale(100);
+    background: red;
+}
+
+@media  screen and (min-width: 300px) {
+    .main-cta, .banner-btn, .testimonials-btn {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .main-cta, .banner-btn, .testimonials-btn {
+        width: 40%;
+    }
+
+    #email {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .hero-img {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    #email {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .hero-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    body {
+        background: url(../images/bg-tablet-pattern.svg) no-repeat 700px -170px;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: auto;
+        
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #close-icon {
+        opacity: 0;
+        cursor: default;
+    }
+
+    .head-logo {
+        margin-left: -30px;
+        flex-basis: 50%;
+    }
+
+    nav {
+        display: block;
+        flex-basis: 50%;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0;
+        background: none;
+    }
+
+    .nav-btn {
+        display: block;
+        width: 100%;
+        flex-basis: 50%;
+        padding: 10px 15px;
+        margin-top: 15px;
+    }
+    
+    nav a {
+        float: left;
+        padding-left: 20px;   
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: space-evenly;
+        width: 85%;
+        margin: auto;
+    }
+
+    .hero-texts {
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    h1 {
+        font-size: 48px;
+        width: 85%;
+    }
+
+    .hero-paragraph {
+        margin-top: 24px;
+        width: 60%;
+    }
+
+    .hero-img {
+        margin-right: -20px;
+        width: 80%;
+        height: 80%;
+        margin-top: 64px;
+    }
+
+    .main-cta {
+        text-align: center;
+        display: block;
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .pitch-talk-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: auto;
+        margin-top: 48px;
+        align-items: baseline;
+        background: url(../images/bg-tablet-pattern.svg) no-repeat -600px 200px;
+        background-size: cover;
+        
+    }
+
+    .pitch-talk-headings {
+        text-align: left;
+        margin-left: 0;
+        background: none;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .h3-heading {
+        background: none;
+    }
+
+    .pitch-explain p {
+        margin-left: 83px;
+    }
+
+    .testimonials-section {
+        margin-top: 80px; 
+    }
+
+    .main-testimonials {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        overflow-x: auto;
+    }
+
+    .main-testimonials img {
+        width: 30px;
+        height: 30px;
+        margin-top: -25px;
+    }
+
+    .testimonial {
+        display: inline-block;
+        max-width: 500px;
+        margin: auto;
+        margin: 20px 30px;  
+    }
+
+    .testimonial:nth-of-type(1) {
+        margin-left: 0px;
+    }
+
+    .testimonial-quote {
+        width: 500px;
+        margin: auto;
+    }
+
+    .testimonials-btn {
+        width: 20%;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .banner h2 {
+        width: 40%;
+        margin: auto;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .banner-btn {
+        width: 20%;
+        margin: auto;
+        margin-right: 40px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 85%;
+        margin: auto;
+        padding: 0;
+        margin: 0;   
+    }
+
+    label {
+        width: 70%;
+        margin: 0 auto;
+        margin-right: -100px;
+    }
+
+    #email {
+        width: 70%;
+        margin: auto;
+    }
+
+    .foot-logo {
+        margin-left: 45px;
+    }
+
+    .social-icons {
+        margin-left: -160px;
+        margin-top: 110px;
+        width: 20%;
+    }
+
+    .foot-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -23px;
+    }
+
+    .foot-links-sect-1 a {
+        width: 40%;
+    }
+
+    .foot-links-sect-2 {
+        margin-right: 70px;
+    }
+
+    .foot-links-sect-2 a {
+        width: 100%;
+    }
+
+    .copyright-hide {
+        display: none;
+    }
+
+    .label-copy {
+        margin-right: -80px;  
+    }
+
+    .copyright-show-desktop {
+        display: block; 
+        margin-right: -40px;
+        margin-top: 75px;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    .container, .header-container {
+        width: 80%;
+        margin: auto;
+    }   
+
+    .pitch-talk-container {
+        margin-top: 48px;
+    }
+
+    .testimonials-section {
+        margin-top: 96px;
+        margin-bottom: 136px;
+    }
+
+    .banner h2 {
+        margin-left: 6%;
+    }
+    
+    .banner-btn {
+        margin-right: 6%;
+    }
+
+    .footer-container {
+        margin-left: 4%;
+    }
+
+    .label-copy {
+        margin-right: -12px;
+    }
+
+    .social-icons {
+        margin-left: -165px;
+    }
+
+}
